@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO: Title optimisé (mot-clé principal + marque + bénéfice) -->
+    <title>Notes4Pets — Carnet de santé digital pour chien, chat et animaux de compagnie | App iOS</title>
+
+    <!-- SEO: Meta description optimisée (155 car., CTA, mots-clés naturels) -->
+    <meta name="description" content="Notes4Pets : l'app iOS gratuite pour gérer le carnet de santé, les vaccins, traitements, rappels et le journal de votre chien, chat, lapin ou oiseau. Téléchargez maintenant !">
+
+    <!-- SEO: Meta keywords -->
+    <meta name="keywords" content="carnet de santé animal, app santé animaux, suivi vétérinaire, vaccins chien, vaccins chat, journal animal de compagnie, rappels vétérinaire, application iOS animaux, pet health record, pet journal app, Notes4Pets, suivi poids animal, carnet vaccination chien, carnet vaccination chat, gestion animaux de compagnie, partage familial animaux, export PDF vétérinaire, digital pet health book, Haustier Gesundheitsheft, cartilla de salud mascota">
+
+    <!-- SEO: Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Notes4Pets — Carnet de santé digital pour vos animaux de compagnie">
+    <meta property="og:description" content="Suivez la santé, les vaccins, les traitements et les souvenirs de vos animaux. Gratuit sur iOS.">
+    <meta property="og:image" content="https://notes4pets.app/assets/images/og-image.png">
+    <meta property="og:url" content="https://notes4pets.app">
+    <meta property="og:site_name" content="Notes4Pets">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:locale:alternate" content="en_GB">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="es_ES">
+
+    <!-- SEO: Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Notes4Pets — Carnet de santé digital pour vos animaux">
+    <meta name="twitter:description" content="L'app iOS gratuite pour gérer la santé, les vaccins, le journal et les rappels de vos animaux de compagnie.">
+    <meta name="twitter:image" content="https://notes4pets.app/assets/images/og-image.png">
+
+    <!-- SEO: Canonical URL -->
+    <link rel="canonical" href="https://notes4pets.app">
+
+    <!-- SEO: Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- SEO: Author & App -->
+    <meta name="author" content="GEDEONWEB — Gérald Jakubczak">
+    <meta name="apple-itunes-app" content="app-id=YOUR_APP_ID">
+    <meta name="application-name" content="Notes4Pets">
+
+    <!-- SEO: Alternate languages (hreflang) -->
+    <link rel="alternate" hreflang="fr" href="https://notes4pets.app">
+    <link rel="alternate" hreflang="en" href="https://notes4pets.app?lang=en">
+    <link rel="alternate" hreflang="de" href="https://notes4pets.app?lang=de">
+    <link rel="alternate" hreflang="es" href="https://notes4pets.app?lang=es">
+    <link rel="alternate" hreflang="x-default" href="https://notes4pets.app">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/appicon.png">
+    <link rel="apple-touch-icon" href="assets/images/appicon.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- SEO: Schema.org Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "Notes4Pets",
+        "operatingSystem": "iOS",
+        "applicationCategory": "LifestyleApplication",
+        "description": "Digital health record app for pets. Track vaccines, treatments, vet visits, weight, journal and reminders for dogs, cats, rabbits, birds and more.",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "EUR"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "GEDEONWEB",
+            "url": "https://gedeonweb.fr"
+        },
+        "url": "https://notes4pets.app",
+        "image": "https://notes4pets.app/assets/images/logo.png",
+        "inLanguage": ["fr", "en", "de", "es"],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "ratingCount": "1"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">
+                <img src="assets/images/logo.png" alt="Notes4Pets Logo" class="nav-logo-img">
+                <span class="nav-logo-text">Notes4Pets</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#features" class="nav-link" data-i18n="nav_features">Fonctionnalités</a></li>
+                <li><a href="#health" class="nav-link" data-i18n="nav_health">Carnet de santé</a></li>
+                <li><a href="#journal" class="nav-link" data-i18n="nav_journal">Journal</a></li>
+                <li><a href="#pets" class="nav-link" data-i18n="nav_pets">Animaux</a></li>
+                <li><a href="#premium" class="nav-link">Premium</a></li>
+                <li><a href="#download" class="nav-link nav-cta" data-i18n="nav_download">Télécharger</a></li>
+                <li class="nav-lang-switcher">
+                    <button class="lang-btn active" data-lang="fr" title="Français">🇫🇷</button>
+                    <button class="lang-btn" data-lang="en" title="English">🇬🇧</button>
+                    <button class="lang-btn" data-lang="de" title="Deutsch">🇩🇪</button>
+                    <button class="lang-btn" data-lang="es" title="Español">🇪🇸</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content" data-animate="fade-up">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span data-i18n="hero_badge">Disponible sur iOS</span>
+                </div>
+                <h1 class="hero-title" data-i18n="hero_title" data-i18n-html="true">
+                    Le carnet de santé <span class="gradient-text">digital</span> pour vos compagnons
+                </h1>
+                <p class="hero-subtitle" data-i18n="hero_subtitle">
+                    Suivez la santé, les souvenirs et le bien-être de vos animaux de compagnie.
+                    Tout ce dont vous avez besoin, dans une seule application magnifique.
+                </p>
+                <div class="hero-actions">
+                    <a href="#download" class="btn btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                        <span data-i18n="hero_cta">Télécharger l'app</span>
+                    </a>
+                    <a href="#features" class="btn btn-secondary">
+                        <span data-i18n="hero_discover">Découvrir</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">6</span>
+                        <span class="stat-label" data-i18n="stat_species">Espèces supportées</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label" data-i18n="stat_languages">Langues</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label" data-i18n="stat_memories">Souvenirs</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual" data-animate="fade-up" data-delay="200">
+                <div class="phone-mockup">
+                    <div class="phone-frame">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen">
+                            <div class="screen-header">
+                                <div class="screen-greeting" data-i18n="screen_greeting">Bonjour, Marie 👋</div>
+                                <div class="screen-subtitle" data-i18n="screen_subtitle">Vos compagnons vous attendent</div>
+                            </div>
+                            <div class="screen-card">
+                                <div class="screen-card-pet">
+                                    <img src="assets/images/chien.png" alt="Chien" class="screen-pet-img">
+                                    <div class="screen-pet-info">
+                                        <span class="screen-pet-name">Max</span>
+                                        <span class="screen-pet-breed">Golden Retriever</span>
+                                    </div>
+                                    <span class="screen-pet-age" data-i18n="screen_age_3">3 ans</span>
+                                </div>
+                            </div>
+                            <div class="screen-card">
+                                <div class="screen-card-pet">
+                                    <img src="assets/images/chat.png" alt="Chat" class="screen-pet-img">
+                                    <div class="screen-pet-info">
+                                        <span class="screen-pet-name">Luna</span>
+                                        <span class="screen-pet-breed" data-i18n="screen_breed_siamese">Siamois</span>
+                                    </div>
+                                    <span class="screen-pet-age" data-i18n="screen_age_2">2 ans</span>
+                                </div>
+                            </div>
+                            <div class="screen-reminder">
+                                <div class="reminder-icon">💉</div>
+                                <div class="reminder-info">
+                                    <span class="reminder-title" data-i18n="screen_vaccine_max">Vaccin — Max</span>
+                                    <span class="reminder-date" data-i18n="screen_in_3_days">Dans 3 jours</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-card card-1" data-float>
+                    <div class="floating-icon">🐾</div>
+                    <span data-i18n="float_health">Suivi santé</span>
+                </div>
+                <div class="floating-card card-2" data-float>
+                    <div class="floating-icon">📔</div>
+                    <span data-i18n="float_journal">Journal</span>
+                </div>
+                <div class="floating-card card-3" data-float>
+                    <div class="floating-icon">🔔</div>
+                    <span data-i18n="float_reminders">Rappels</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Overview -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag" data-i18n="features_tag">Fonctionnalités</span>
+                <h2 class="section-title" data-i18n="features_title">Tout pour le bonheur de vos animaux</h2>
+                <p class="section-subtitle" data-i18n="features_subtitle">Une suite complète d'outils pensés avec amour pour prendre soin de vos compagnons au quotidien.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-animate="fade-up" data-delay="0">
+                    <div class="feature-icon-wrap gradient-orange-pink">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                    </div>
+                    <h3 class="feature-title" data-i18n="feat_health_title">Carnet de santé</h3>
+                    <p class="feature-desc" data-i18n="feat_health_desc">Vaccins, traitements, visites vétérinaires et suivi du poids. Tout le dossier médical en un seul endroit.</p>
+                </div>
+                <div class="feature-card" data-animate="fade-up" data-delay="100">
+                    <div class="feature-icon-wrap gradient-pink-purple">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+                    </div>
+                    <h3 class="feature-title" data-i18n="feat_journal_title">Journal intime</h3>
+                    <p class="feature-desc" data-i18n="feat_journal_desc">Capturez chaque moment spécial avec photos, humeurs et tags. Un vrai journal de bord de vos compagnons.</p>
+                </div>
+                <div class="feature-card" data-animate="fade-up" data-delay="200">
+                    <div class="feature-icon-wrap gradient-orange-yellow">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                    </div>
+                    <h3 class="feature-title" data-i18n="feat_reminders_title">Rappels intelligents</h3>
+                    <p class="feature-desc" data-i18n="feat_reminders_desc">Ne manquez plus jamais un vaccin ou un rendez-vous. Rappels récurrents avec notifications push.</p>
+                </div>
+                <div class="feature-card" data-animate="fade-up" data-delay="0">
+                    <div class="feature-icon-wrap gradient-blue-purple">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    </div>
+                    <h3 class="feature-title" data-i18n="feat_pdf_title">Export PDF</h3>
+                    <p class="feature-desc" data-i18n="feat_pdf_desc">Générez un carnet de santé complet en PDF à partager avec votre vétérinaire en un clic.</p>
+                </div>
+                <div class="feature-card" data-animate="fade-up" data-delay="100">
+                    <div class="feature-icon-wrap gradient-green">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <h3 class="feature-title" data-i18n="feat_family_title">Partage familial</h3>
+                    <p class="feature-desc" data-i18n="feat_family_desc">Partagez les fiches de vos animaux avec toute la famille. Jusqu'à 5 membres avec un code d'invitation.</p>
+                </div>
+                <div class="feature-card" data-animate="fade-up" data-delay="200">
+                    <div class="feature-icon-wrap gradient-orange-pink">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    </div>
+                    <h3 class="feature-title" data-i18n="feat_personality_title">Personnalité & histoire</h3>
+                    <p class="feature-desc" data-i18n="feat_personality_desc">Documentez le caractère unique de votre animal : goûts, peurs, habitudes et son histoire personnelle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Section with Phone Mockup -->
+    <section class="health-section" id="health">
+        <div class="container">
+            <div class="split-content">
+                <div class="split-visual" data-animate="fade-right">
+                    <div class="phone-mockup mockup-alt">
+                        <div class="phone-frame">
+                            <div class="phone-notch"></div>
+                            <div class="phone-screen screen-health">
+                                <div class="screen-nav-bar">
+                                    <span class="screen-back">‹</span>
+                                    <span class="screen-title-bar" data-i18n="health_screen_title">Carnet de santé</span>
+                                    <span></span>
+                                </div>
+                                <div class="health-tabs">
+                                    <span class="health-tab active" data-i18n="health_tab_vaccines">Vaccins</span>
+                                    <span class="health-tab" data-i18n="health_tab_treatments">Traitements</span>
+                                    <span class="health-tab" data-i18n="health_tab_visits">Visites</span>
+                                    <span class="health-tab" data-i18n="health_tab_weight">Poids</span>
+                                </div>
+                                <div class="health-card-mock">
+                                    <div class="health-status valid" data-i18n="health_status_valid">✓ À jour</div>
+                                    <div class="health-name" data-i18n="health_rabies">Rage</div>
+                                    <div class="health-date">12 mars 2025</div>
+                                    <div class="health-next" data-i18n="health_next_1">Prochain : 12 mars 2026</div>
+                                </div>
+                                <div class="health-card-mock">
+                                    <div class="health-status warning" data-i18n="health_status_soon">⏰ Bientôt</div>
+                                    <div class="health-name">CHPLR</div>
+                                    <div class="health-date">5 juin 2024</div>
+                                    <div class="health-next" data-i18n="health_next_2">Prochain : 5 juin 2025</div>
+                                </div>
+                                <div class="health-card-mock">
+                                    <div class="health-status valid" data-i18n="health_status_valid">✓ À jour</div>
+                                    <div class="health-name" data-i18n="health_leukosis">Leucose</div>
+                                    <div class="health-date">20 janv. 2025</div>
+                                    <div class="health-next" data-i18n="health_next_3">Prochain : 20 janv. 2026</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="split-text" data-animate="fade-left">
+                    <span class="section-tag" data-i18n="health_tag">Carnet de santé</span>
+                    <h2 class="section-title text-left" data-i18n="health_title">Le dossier médical complet de votre animal</h2>
+                    <p class="section-subtitle text-left" data-i18n="health_subtitle">Fini les carnets papier perdus. Centralisez toutes les informations de santé et ne manquez plus aucun rendez-vous.</p>
+                    <ul class="feature-list">
+                        <li class="feature-list-item">
+                            <div class="check-icon">✓</div>
+                            <div>
+                                <strong data-i18n="health_vaccines">Vaccins</strong>
+                                <p data-i18n="health_vaccines_desc">Suivi des dates, lots, vétérinaires et statuts (à jour, bientôt, expiré)</p>
+                            </div>
+                        </li>
+                        <li class="feature-list-item">
+                            <div class="check-icon">✓</div>
+                            <div>
+                                <strong data-i18n="health_treatments">Traitements</strong>
+                                <p data-i18n="health_treatments_desc">Antiparasitaires, vermifuges et médicaments avec rappels automatiques</p>
+                            </div>
+                        </li>
+                        <li class="feature-list-item">
+                            <div class="check-icon">✓</div>
+                            <div>
+                                <strong data-i18n="health_visits">Visites vétérinaires</strong>
+                                <p data-i18n="health_visits_desc">Historique complet : motifs, diagnostics, traitements et coûts</p>
+                            </div>
+                        </li>
+                        <li class="feature-list-item">
+                            <div class="check-icon">✓</div>
+                            <div>
+                                <strong data-i18n="health_weight">Suivi du poids</strong>
+                                <p data-i18n="health_weight_desc">Courbe d'évolution avec dates et notes pour suivre la forme</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journal Section -->
+    <section class="journal-section" id="journal">
+        <div class="container">
+            <div class="split-content reverse">
+                <div class="split-text" data-animate="fade-right">
+                    <span class="section-tag" data-i18n="journal_tag">Journal</span>
+                    <h2 class="section-title text-left" data-i18n="journal_title">Chaque moment mérite d'être gardé</h2>
+                    <p class="section-subtitle text-left" data-i18n="journal_subtitle">Créez un journal intime pour votre compagnon. Photos, humeurs, anecdotes... ne perdez aucun souvenir.</p>
+                    <div class="journal-types">
+                        <div class="journal-type">
+                            <span class="journal-type-icon" style="background: #FF9500;">📝</span>
+                            <span data-i18n="journal_notes">Notes</span>
+                        </div>
+                        <div class="journal-type">
+                            <span class="journal-type-icon" style="background: #FF2D55;">📸</span>
+                            <span data-i18n="journal_moments">Moments</span>
+                        </div>
+                        <div class="journal-type">
+                            <span class="journal-type-icon" style="background: #34C759;">🏥</span>
+                            <span data-i18n="journal_health">Santé</span>
+                        </div>
+                        <div class="journal-type">
+                            <span class="journal-type-icon" style="background: #FFCC00;">😂</span>
+                            <span data-i18n="journal_funny">Drôle</span>
+                        </div>
+                        <div class="journal-type">
+                            <span class="journal-type-icon" style="background: #AF52DE;">🏆</span>
+                            <span data-i18n="journal_milestones">Jalons</span>
+                        </div>
+                    </div>
+                    <div class="mood-section">
+                        <span class="mood-label" data-i18n="journal_mood_label">Suivez l'humeur :</span>
+                        <div class="mood-pills">
+                            <span class="mood-pill" data-i18n="mood_happy">😊 Heureux</span>
+                            <span class="mood-pill" data-i18n="mood_calm">😌 Calme</span>
+                            <span class="mood-pill" data-i18n="mood_playful">🎾 Joueur</span>
+                            <span class="mood-pill" data-i18n="mood_tired">😴 Fatigué</span>
+                            <span class="mood-pill" data-i18n="mood_sick">🤒 Malade</span>
+                            <span class="mood-pill" data-i18n="mood_anxious">😰 Anxieux</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="split-visual" data-animate="fade-left">
+                    <div class="phone-mockup mockup-alt">
+                        <div class="phone-frame">
+                            <div class="phone-notch"></div>
+                            <div class="phone-screen screen-journal">
+                                <div class="screen-nav-bar">
+                                    <span class="screen-back">‹</span>
+                                    <span class="screen-title-bar" data-i18n="journal_screen_title">Journal de Max</span>
+                                    <span class="screen-add">+</span>
+                                </div>
+                                <div class="journal-entry-mock">
+                                    <div class="journal-entry-header">
+                                        <span class="journal-entry-type" style="background: #FF2D55;" data-i18n="journal_entry_moment">📸 Moment</span>
+                                        <span class="journal-entry-date" data-i18n="journal_today">Aujourd'hui</span>
+                                    </div>
+                                    <div class="journal-entry-title" data-i18n="journal_entry1_title">Première baignade !</div>
+                                    <div class="journal-entry-text" data-i18n="journal_entry1_text">Max a adoré sa première fois à la plage. Il n'arrêtait pas de courir...</div>
+                                    <div class="journal-entry-mood" data-i18n="journal_entry1_mood">😊 Heureux</div>
+                                </div>
+                                <div class="journal-entry-mock">
+                                    <div class="journal-entry-header">
+                                        <span class="journal-entry-type" style="background: #34C759;" data-i18n="journal_entry_health">🏥 Santé</span>
+                                        <span class="journal-entry-date" data-i18n="journal_yesterday">Hier</span>
+                                    </div>
+                                    <div class="journal-entry-title" data-i18n="journal_entry2_title">Visite de contrôle</div>
+                                    <div class="journal-entry-text" data-i18n="journal_entry2_text">Tout va bien ! Le vétérinaire est satisfait de son poids.</div>
+                                    <div class="journal-entry-mood" data-i18n="journal_entry2_mood">😌 Calme</div>
+                                </div>
+                                <div class="journal-entry-mock">
+                                    <div class="journal-entry-header">
+                                        <span class="journal-entry-type" style="background: #FFCC00;" data-i18n="journal_entry_funny">😂 Drôle</span>
+                                        <span class="journal-entry-date" data-i18n="journal_3days">Il y a 3 jours</span>
+                                    </div>
+                                    <div class="journal-entry-title" data-i18n="journal_entry3_title">Le voleur de chaussettes</div>
+                                    <div class="journal-entry-text" data-i18n="journal_entry3_text">Encore pris en flagrant délit avec ma chaussette préférée !</div>
+                                    <div class="journal-entry-mood" data-i18n="journal_entry3_mood">🎾 Joueur</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pets Species Section -->
+    <section class="pets-section" id="pets">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag" data-i18n="pets_tag">Tous vos compagnons</span>
+                <h2 class="section-title" data-i18n="pets_title">Pour chaque animal, une attention unique</h2>
+                <p class="section-subtitle" data-i18n="pets_subtitle">Notes4Pets s'adapte à tous les types d'animaux de compagnie. Chacun mérite le meilleur suivi.</p>
+            </div>
+            <div class="pets-showcase" data-animate="fade-up">
+                <div class="pet-species-card">
+                    <div class="pet-species-img-wrap">
+                        <img src="assets/images/chien.png" alt="Chien" class="pet-species-img">
+                    </div>
+                    <h3 data-i18n="pet_dogs">Chiens</h3>
+                    <p data-i18n="pet_dogs_desc">Du chihuahua au dogue allemand</p>
+                </div>
+                <div class="pet-species-card">
+                    <div class="pet-species-img-wrap">
+                        <img src="assets/images/chat.png" alt="Chat" class="pet-species-img">
+                    </div>
+                    <h3 data-i18n="pet_cats">Chats</h3>
+                    <p data-i18n="pet_cats_desc">Du persan au chat de gouttière</p>
+                </div>
+                <div class="pet-species-card">
+                    <div class="pet-species-img-wrap">
+                        <img src="assets/images/lapin.png" alt="Lapin" class="pet-species-img">
+                    </div>
+                    <h3 data-i18n="pet_rabbits">Lapins</h3>
+                    <p data-i18n="pet_rabbits_desc">Nain, bélier ou géant</p>
+                </div>
+                <div class="pet-species-card">
+                    <div class="pet-species-img-wrap">
+                        <img src="assets/images/oiseau.png" alt="Oiseau" class="pet-species-img">
+                    </div>
+                    <h3 data-i18n="pet_birds">Oiseaux</h3>
+                    <p data-i18n="pet_birds_desc">Perruches, perroquets et canaris</p>
+                </div>
+                <div class="pet-species-card">
+                    <div class="pet-species-img-wrap">
+                        <img src="assets/images/rongeur.png" alt="Rongeur" class="pet-species-img">
+                    </div>
+                    <h3 data-i18n="pet_rodents">Rongeurs</h3>
+                    <p data-i18n="pet_rodents_desc">Hamsters, cochons d'Inde...</p>
+                </div>
+                <div class="pet-species-card">
+                    <div class="pet-species-img-wrap">
+                        <img src="assets/images/autre.png" alt="Autre animal" class="pet-species-img">
+                    </div>
+                    <h3 data-i18n="pet_other">Et plus</h3>
+                    <p data-i18n="pet_other_desc">Reptiles, poissons et autres</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reminders Section -->
+    <section class="reminders-section">
+        <div class="container">
+            <div class="split-content">
+                <div class="split-visual" data-animate="fade-right">
+                    <div class="phone-mockup mockup-alt">
+                        <div class="phone-frame">
+                            <div class="phone-notch"></div>
+                            <div class="phone-screen screen-reminders">
+                                <div class="screen-nav-bar">
+                                    <span></span>
+                                    <span class="screen-title-bar" data-i18n="reminders_screen_title">Rappels</span>
+                                    <span class="screen-add">+</span>
+                                </div>
+                                <div class="reminder-mock urgent">
+                                    <div class="reminder-mock-icon">💉</div>
+                                    <div class="reminder-mock-content">
+                                        <div class="reminder-mock-title" data-i18n="rem_vaccine_max">Vaccin Rage — Max</div>
+                                        <div class="reminder-mock-time" data-i18n="rem_in_2_days">Dans 2 jours</div>
+                                    </div>
+                                    <div class="reminder-mock-badge" data-i18n="rem_urgent">Urgent</div>
+                                </div>
+                                <div class="reminder-mock">
+                                    <div class="reminder-mock-icon">💊</div>
+                                    <div class="reminder-mock-content">
+                                        <div class="reminder-mock-title" data-i18n="rem_dewormer_luna">Vermifuge — Luna</div>
+                                        <div class="reminder-mock-time" data-i18n="rem_in_1_week">Dans 1 semaine</div>
+                                    </div>
+                                </div>
+                                <div class="reminder-mock">
+                                    <div class="reminder-mock-icon">🏥</div>
+                                    <div class="reminder-mock-content">
+                                        <div class="reminder-mock-title" data-i18n="rem_annual_max">Visite annuelle — Max</div>
+                                        <div class="reminder-mock-time">15 mars 2025</div>
+                                    </div>
+                                </div>
+                                <div class="reminder-mock">
+                                    <div class="reminder-mock-icon">✂️</div>
+                                    <div class="reminder-mock-content">
+                                        <div class="reminder-mock-title" data-i18n="rem_grooming_luna">Toilettage — Luna</div>
+                                        <div class="reminder-mock-time">22 mars 2025</div>
+                                    </div>
+                                </div>
+                                <div class="reminder-mock completed">
+                                    <div class="reminder-mock-icon">✅</div>
+                                    <div class="reminder-mock-content">
+                                        <div class="reminder-mock-title" data-i18n="rem_antiparasitic_max">Antiparasitaire — Max</div>
+                                        <div class="reminder-mock-time" data-i18n="rem_completed">Complété</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="split-text" data-animate="fade-left">
+                    <span class="section-tag" data-i18n="reminders_tag">Rappels</span>
+                    <h2 class="section-title text-left" data-i18n="reminders_title">Ne manquez plus rien</h2>
+                    <p class="section-subtitle text-left" data-i18n="reminders_subtitle">Des rappels intelligents qui s'adaptent à votre routine. Récurrents, ponctuels, urgents — tout est sous contrôle.</p>
+                    <div class="reminder-types-grid">
+                        <div class="reminder-type-card">
+                            <span>💉</span>
+                            <span data-i18n="rem_type_vaccines">Vaccins</span>
+                        </div>
+                        <div class="reminder-type-card">
+                            <span>💊</span>
+                            <span data-i18n="rem_type_treatments">Traitements</span>
+                        </div>
+                        <div class="reminder-type-card">
+                            <span>🏥</span>
+                            <span data-i18n="rem_type_vet">Visites véto</span>
+                        </div>
+                        <div class="reminder-type-card">
+                            <span>💊</span>
+                            <span data-i18n="rem_type_meds">Médicaments</span>
+                        </div>
+                        <div class="reminder-type-card">
+                            <span>✂️</span>
+                            <span data-i18n="rem_type_grooming">Toilettage</span>
+                        </div>
+                        <div class="reminder-type-card">
+                            <span>⭐</span>
+                            <span data-i18n="rem_type_custom">Personnalisé</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Birthday / Milestones Section -->
+    <section class="milestones-section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag" data-i18n="milestones_tag">Jalons & anniversaires</span>
+                <h2 class="section-title" data-i18n="milestones_title">Célébrez chaque étape</h2>
+                <p class="section-subtitle" data-i18n="milestones_subtitle">Premiers pas, anniversaires, adoptions... Notes4Pets célèbre ces moments avec vous, confettis inclus !</p>
+            </div>
+            <div class="milestones-grid" data-animate="fade-up">
+                <div class="milestone-card">
+                    <div class="milestone-emoji">🎂</div>
+                    <h3 data-i18n="mile_birthdays">Anniversaires</h3>
+                    <p data-i18n="mile_birthdays_desc">Célébration automatique avec carte d'anniversaire et animation confettis</p>
+                </div>
+                <div class="milestone-card">
+                    <div class="milestone-emoji">🏠</div>
+                    <h3 data-i18n="mile_adoption">Adoption</h3>
+                    <p data-i18n="mile_adoption_desc">Gardez en mémoire la date et l'histoire de l'arrivée dans votre famille</p>
+                </div>
+                <div class="milestone-card">
+                    <div class="milestone-emoji">⭐</div>
+                    <h3 data-i18n="mile_firsts">Premières fois</h3>
+                    <p data-i18n="mile_firsts_desc">Premier bain, première promenade, premier jouet... chaque première compte</p>
+                </div>
+                <div class="milestone-card">
+                    <div class="milestone-emoji">🏆</div>
+                    <h3 data-i18n="mile_achievements">Accomplissements</h3>
+                    <p data-i18n="mile_achievements_desc">Progrès en éducation, concours, exploits... immortalisez les victoires</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Section -->
+    <section class="premium-section" id="premium">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag tag-premium">Premium</span>
+                <h2 class="section-title" data-i18n="premium_title">Passez au niveau supérieur</h2>
+                <p class="section-subtitle" data-i18n="premium_subtitle">Débloquez toute la puissance de Notes4Pets avec nos offres Premium et Famille.</p>
+            </div>
+            <div class="pricing-grid" data-animate="fade-up">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 data-i18n="price_free">Gratuit</h3>
+                        <div class="pricing-price">0€</div>
+                        <p class="pricing-period" data-i18n="price_forever">Pour toujours</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="pricing-check">✓</span> <span data-i18n="price_1_pet">1 animal</span></li>
+                        <li><span class="pricing-check">✓</span> <span data-i18n="price_health_record">Carnet de santé</span></li>
+                        <li><span class="pricing-check">✓</span> <span data-i18n="price_reminders">Rappels</span></li>
+                        <li><span class="pricing-check">✓</span> <span data-i18n="price_limited_journal">Journal limité</span></li>
+                        <li><span class="pricing-check">✓</span> <span data-i18n="price_1_photo">1 photo par entrée</span></li>
+                        <li class="pricing-disabled"><span class="pricing-x">✗</span> <span data-i18n="price_pdf_export">Export PDF</span></li>
+                        <li class="pricing-disabled"><span class="pricing-x">✗</span> <span data-i18n="price_family_share">Partage familial</span></li>
+                    </ul>
+                    <a href="#download" class="btn btn-outline" data-i18n="price_start">Commencer</a>
+                </div>
+                <div class="pricing-card pricing-featured">
+                    <div class="pricing-badge" data-i18n="price_popular">Populaire</div>
+                    <div class="pricing-header">
+                        <h3>Premium</h3>
+                        <div class="pricing-price" data-i18n="price_premium_price" data-i18n-html="true">4,99€<span>/mois</span></div>
+                        <p class="pricing-period" data-i18n="price_premium_period">Ou 39,99€/an</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="pricing-check">✓</span> <span data-i18n="price_unlimited_pets">Animaux illimités</span></li>
+                        <li><span class="pricing-check">✓</span> <span data-i18n="price_full_health">Carnet de santé complet</span></li>
+                        <li><span class="pricing-check">✓</span> <span data-i18n="price_advanced_reminders">Rappels avancés</span></li>
+                        <li><span class="pricing-check">✓</span> <span data-i18n="price_unlimited_journal">Journal illimité</span></li>
+                        <li><span class="pricing-check">✓</span> <span data-i18n="price_unlimited_photos">Photos illimitées</span></li>
+                        <li><span class="pricing-check">✓</span> <span data-i18n="price_pdf_export">Export PDF</span></li>
+                        <li><span class="pricing-check">✓</span> <span data-i18n="price_priority_support">Support prioritaire</span></li>
+                    </ul>
+                    <a href="#download" class="btn btn-primary" data-i18n="price_try_premium">Essayer Premium</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 data-i18n="price_family">Famille</h3>
+                        <div class="pricing-price" data-i18n="price_family_price" data-i18n-html="true">7,99€<span>/mois</span></div>
+                        <p class="pricing-period" data-i18n="price_family_period">Jusqu'à 5 membres</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="pricing-check">✓</span> <span data-i18n="price_all_premium">Tout le Premium</span></li>
+                        <li><span class="pricing-check">✓</span> <span data-i18n="price_5_members">5 membres max</span></li>
+                        <li><span class="pricing-check">✓</span> <span data-i18n="price_invite_code">Code d'invitation</span></li>
+                        <li><span class="pricing-check">✓</span> <span data-i18n="price_shared_access">Accès partagé</span></li>
+                        <li><span class="pricing-check">✓</span> <span data-i18n="price_member_mgmt">Gestion des membres</span></li>
+                        <li><span class="pricing-check">✓</span> <span data-i18n="price_pdf_export">Export PDF</span></li>
+                        <li><span class="pricing-check">✓</span> <span data-i18n="price_priority_support">Support prioritaire</span></li>
+                    </ul>
+                    <a href="#download" class="btn btn-outline" data-i18n="price_choose_family">Choisir Famille</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section class="languages-section">
+        <div class="container">
+            <div class="languages-banner" data-animate="fade-up">
+                <div class="languages-text">
+                    <h3 data-i18n="lang_title">Disponible en 4 langues</h3>
+                    <p data-i18n="lang_subtitle">Notes4Pets parle votre langue, où que vous soyez.</p>
+                </div>
+                <div class="languages-flags">
+                    <div class="language-item">
+                        <span class="flag-emoji">🇫🇷</span>
+                        <span>Français</span>
+                    </div>
+                    <div class="language-item">
+                        <span class="flag-emoji">🇬🇧</span>
+                        <span>English</span>
+                    </div>
+                    <div class="language-item">
+                        <span class="flag-emoji">🇩🇪</span>
+                        <span>Deutsch</span>
+                    </div>
+                    <div class="language-item">
+                        <span class="flag-emoji">🇪🇸</span>
+                        <span>Español</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download CTA Section -->
+    <section class="download-section" id="download">
+        <div class="download-bg-shapes">
+            <div class="dl-shape dl-shape-1"></div>
+            <div class="dl-shape dl-shape-2"></div>
+        </div>
+        <div class="container">
+            <div class="download-content" data-animate="fade-up">
+                <img src="assets/images/logo.png" alt="Notes4Pets" class="download-logo">
+                <h2 class="download-title" data-i18n="dl_title">Prêt à prendre soin de vos compagnons ?</h2>
+                <p class="download-subtitle" data-i18n="dl_subtitle">Téléchargez Notes4Pets gratuitement et commencez à créer le carnet de santé digital de vos animaux dès aujourd'hui.</p>
+                <a href="#" class="btn btn-download">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                    <span data-i18n="dl_appstore">Télécharger sur l'App Store</span>
+                </a>
+                <p class="download-note" data-i18n="dl_note">Gratuit — iOS 15.0 ou supérieur</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/images/logo.png" alt="Notes4Pets" class="footer-logo">
+                    <span class="footer-brand-name">Notes4Pets</span>
+                    <p class="footer-tagline" data-i18n="footer_tagline">Le carnet de santé digital pour vos compagnons.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4 data-i18n="footer_app">Application</h4>
+                        <a href="#features" data-i18n="nav_features">Fonctionnalités</a>
+                        <a href="#premium" data-i18n="footer_pricing">Tarifs</a>
+                        <a href="#download" data-i18n="nav_download">Télécharger</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer_legal">Légal</h4>
+                        <a href="legal.html" data-i18n="footer_terms">Conditions d'utilisation</a>
+                        <a href="privacy.html" data-i18n="footer_privacy">Politique de confidentialité</a>
+                        <a href="legal.html" data-i18n="footer_legal_notices">Mentions légales</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Support</h4>
+                        <a href="#">FAQ</a>
+                        <a href="#">Contact</a>
+                        <a href="#" data-i18n="footer_about">À propos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer_copyright">&copy; 2025 Notes4Pets. Tous droits réservés. Fait avec ❤️ pour vos animaux.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
