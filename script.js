@@ -832,7 +832,28 @@ const pageTitles = {
 /* ===========================
    i18n ENGINE
    =========================== */
-let currentLang = localStorage.getItem('n4p_lang') || 'fr';
+function detectLang() {
+    const supported = ['fr', 'en', 'de', 'es'];
+
+    // 1. URL parameter ?lang=xx
+    const urlParam = new URLSearchParams(window.location.search).get('lang');
+    if (urlParam && supported.includes(urlParam)) return urlParam;
+
+    // 2. User's previous choice
+    const saved = localStorage.getItem('n4p_lang');
+    if (saved && supported.includes(saved)) return saved;
+
+    // 3. Browser language detection
+    const langs = navigator.languages || [navigator.language || 'fr'];
+    for (const raw of langs) {
+        const code = raw.slice(0, 2).toLowerCase();
+        if (supported.includes(code)) return code;
+    }
+
+    return 'fr';
+}
+
+let currentLang = detectLang();
 
 function applyTranslations(lang) {
     const dict = translations[lang];
