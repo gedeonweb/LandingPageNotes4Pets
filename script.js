@@ -218,7 +218,7 @@ const translations = {
         footer_privacy: "Politique de confidentialité",
         footer_legal_notices: "Mentions légales",
         footer_about: "À propos",
-        footer_copyright: "© 2025 Notes4Pets. Tous droits réservés. Fait avec ❤️ pour vos animaux."
+        footer_copyright: "© 2026 Notes4Pets. Tous droits réservés. Fait avec ❤️ pour vos animaux."
     },
 
     en: {
@@ -417,7 +417,7 @@ const translations = {
         footer_privacy: "Privacy policy",
         footer_legal_notices: "Legal notices",
         footer_about: "About",
-        footer_copyright: "© 2025 Notes4Pets. All rights reserved. Made with ❤️ for your pets."
+        footer_copyright: "© 2026 Notes4Pets. All rights reserved. Made with ❤️ for your pets."
     },
 
     de: {
@@ -616,7 +616,7 @@ const translations = {
         footer_privacy: "Datenschutzrichtlinie",
         footer_legal_notices: "Impressum",
         footer_about: "Über uns",
-        footer_copyright: "© 2025 Notes4Pets. Alle Rechte vorbehalten. Mit ❤️ für Ihre Tiere gemacht."
+        footer_copyright: "© 2026 Notes4Pets. Alle Rechte vorbehalten. Mit ❤️ für Ihre Tiere gemacht."
     },
 
     es: {
@@ -815,7 +815,7 @@ const translations = {
         footer_privacy: "Política de privacidad",
         footer_legal_notices: "Avisos legales",
         footer_about: "Acerca de",
-        footer_copyright: "© 2025 Notes4Pets. Todos los derechos reservados. Hecho con ❤️ para tus mascotas."
+        footer_copyright: "© 2026 Notes4Pets. Todos los derechos reservados. Hecho con ❤️ para tus mascotas."
     }
 };
 
